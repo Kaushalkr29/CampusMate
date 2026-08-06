@@ -1,0 +1,201 @@
+﻿EDUCATION KNOWLEDGE BASE - PART 1: PROGRAMMING FUNDAMENTALS
+Format: TXT | Covers: Python, SQL, Java, C++
+This document contains course overviews, durations, prerequisites, learning resources, roadmaps, and career opportunities.
+
+
+==================================================================
+COURSE: Python
+==================================================================
+
+
+Overview
+--------
+Python is a high-level, general-purpose programming language known for its simple, readable syntax. It is one of the most popular languages for beginners and is heavily used in web development, data science, automation, scripting, and artificial intelligence. Its huge ecosystem of libraries such as NumPy, Pandas, Flask, FastAPI, and TensorFlow make it a first choice for modern software and AI work.
+
+
+Duration
+--------
+The Python course typically takes 8 weeks to complete for a
+learner studying consistently. Beginners can reach a comfortable level in about two months, while mastery of advanced topics like async programming and metaclasses takes longer.
+
+
+Prerequisites
+-------------
+Before starting Python, a learner should have: basic computer knowledge and logical thinking; no prior programming experience is required.
+
+
+Key Topics Covered
+------------------
+Variables and data types, control flow, functions, list/dict/set comprehensions, object-oriented programming, file handling, exception handling, modules and packages, virtual environments, and an introduction to popular libraries.
+
+
+Learning Resources
+------------------
+Recommended resources for Python: Python Crash Course by Eric Matthes, the official Python documentation, W3Schools Python tutorial, Automate the Boring Stuff with Python, and freeCodeCamp Python courses.
+
+
+Recommended Next Course
+-----------------------
+After completing Python, the natural next step is Data Structures.
+Learning Data Structures next helps you write efficient Python code and prepares you for coding interviews.
+
+
+Career Opportunities
+--------------------
+Learning Python opens up roles such as Python Developer, Backend Developer, Automation Engineer, and Data Analyst.
+Python is also the primary gateway language into Data Science and Machine Learning careers.
+
+
+Real World Applications
+-----------------------
+Python powers web backends (Instagram, Spotify), data pipelines, automation scripts, scientific computing, and virtually every modern AI/ML framework.
+
+
+
+
+==================================================================
+COURSE: SQL
+==================================================================
+
+
+Overview
+--------
+SQL (Structured Query Language) is the standard language for storing, retrieving, and managing data in relational databases such as PostgreSQL, MySQL, SQL Server, and Oracle. It is an essential skill for anyone working with data because almost all business data lives in relational systems.
+
+
+Duration
+--------
+The SQL course typically takes 6 weeks to complete for a
+learner studying consistently. The core querying skills can be picked up quickly, but query optimization and database design take more practice.
+
+
+Prerequisites
+-------------
+Before starting SQL, a learner should have: basic computer knowledge; understanding of tables and spreadsheets is helpful.
+
+
+Key Topics Covered
+------------------
+SELECT queries, filtering with WHERE, sorting, JOINs (inner, left, right, full), GROUP BY and aggregation, subqueries, window functions, indexes, transactions, and normalization.
+
+
+Learning Resources
+------------------
+Recommended resources for SQL: SQLBolt interactive lessons, PostgreSQL official documentation, Mode Analytics SQL tutorial, and the book 'SQL in 10 Minutes a Day'.
+
+
+Recommended Next Course
+-----------------------
+After completing SQL, the natural next step is Machine Learning.
+Strong SQL skills feed directly into data analysis and machine learning, where clean data retrieval is critical.
+
+
+Career Opportunities
+--------------------
+Learning SQL opens up roles such as Database Administrator, Data Analyst, Data Engineer, and Business Intelligence Analyst.
+SQL is one of the most in-demand skills across almost every data-related job posting.
+
+
+Real World Applications
+-----------------------
+SQL is used for reporting dashboards, backend application data storage, ETL pipelines, and analytics in every data-driven company.
+
+
+
+
+==================================================================
+COURSE: Java
+==================================================================
+
+
+Overview
+--------
+Java is a robust, object-oriented, platform-independent programming language that runs on the Java Virtual Machine (JVM). It is widely used for large-scale enterprise applications, Android development, and backend systems where reliability and scalability matter.
+
+
+Duration
+--------
+The Java course typically takes 8 weeks to complete for a
+learner studying consistently. Core Java can be learned in two months; enterprise frameworks like Spring add more time.
+
+
+Prerequisites
+-------------
+Before starting Java, a learner should have: basic computer knowledge and familiarity with basic programming concepts.
+
+
+Key Topics Covered
+------------------
+Syntax and data types, object-oriented programming (encapsulation, inheritance, polymorphism, abstraction), collections framework, exception handling, multithreading, generics, and an introduction to the Spring framework.
+
+
+Learning Resources
+------------------
+Recommended resources for Java: Oracle Java Documentation, Head First Java, the book 'Effective Java' by Joshua Bloch, and Baeldung tutorials.
+
+
+Recommended Next Course
+-----------------------
+After completing Java, the natural next step is Data Structures.
+Data Structures in Java strengthens problem-solving and is essential for technical interviews.
+
+
+Career Opportunities
+--------------------
+Learning Java opens up roles such as Java Developer, Android Developer, Backend Engineer, and Enterprise Software Engineer.
+Java remains a backbone of banking, e-commerce, and large enterprise systems.
+
+
+Real World Applications
+-----------------------
+Java runs Android apps, enterprise banking systems, big-data tools like Hadoop, and large distributed backend services.
+
+
+
+
+==================================================================
+COURSE: C++
+==================================================================
+
+
+Overview
+--------
+C++ is a powerful, high-performance programming language that extends C with object-oriented features. It gives fine-grained control over memory and hardware, making it the language of choice for game engines, operating systems, embedded systems, and performance-critical applications.
+
+
+Duration
+--------
+The C++ course typically takes 10 weeks to complete for a
+learner studying consistently. C++ has a steeper learning curve due to manual memory management and pointers.
+
+
+Prerequisites
+-------------
+Before starting C++, a learner should have: basic programming knowledge and understanding of logic; prior exposure to C is helpful.
+
+
+Key Topics Covered
+------------------
+Pointers and references, memory management, object-oriented programming, the Standard Template Library (STL), templates, operator overloading, and RAII.
+
+
+Learning Resources
+------------------
+Recommended resources for C++: The C++ Programming Language by Bjarne Stroustrup, cppreference.com, and LearnCpp.com.
+
+
+Recommended Next Course
+-----------------------
+After completing C++, the natural next step is Data Structures.
+C++ combined with Data Structures and Algorithms is the classic path for competitive programming.
+
+
+Career Opportunities
+--------------------
+Learning C++ opens up roles such as Game Developer, Systems Programmer, Embedded Engineer, and High-Frequency Trading Engineer.
+C++ is prized in domains where raw performance is non-negotiable.
+
+
+Real World Applications
+-----------------------
+C++ powers game engines (Unreal), browsers (Chrome), databases, operating systems, and real-time trading systems.
