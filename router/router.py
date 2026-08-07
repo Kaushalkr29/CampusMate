@@ -93,8 +93,10 @@ def route_query(query: str) -> str:
         return run_wellness(query)
     if intent == "career":
         return run_career(query)
+    if intent=="startup":
+        return run_startup(query)
     return run_academic(query)
 
 if __name__ == "__main__":
-    query = "I have business idea about Food stall"
+    query =input("Enter a question: ")
     print(route_query(query))

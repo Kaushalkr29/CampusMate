@@ -141,7 +141,7 @@ not_feasible
     response = llm.invoke(prompt)
 
     return {
-        "feasibility": response.content.strip().lower()
+        "feasibility": response.content[0]["text"]
     }
 
 # ---------------------------------------------------
@@ -150,7 +150,7 @@ not_feasible
 
 def feasibility_router(state: StartupState):
 
-    if "feasible" == state["feasibility"]:
+    if "feasible" == state["feasibility"].strip().lower():
         return "continue"
 
     return "stop"
@@ -241,7 +241,7 @@ Keep response practical and simple.
     response = llm.invoke(prompt)
 
     return {
-        "recommendation": response.content
+        "recommendation": response.content[0]["text"]
     }
 
 # ---------------------------------------------------
@@ -312,6 +312,26 @@ def build_graph():
     builder.add_edge(
         "search_business_idea",
         "validate_business_idea"
+    )
+
+    builder.add_edge(
+    "process_startup_queries",
+    "retrieve_startup_knowledge"
+    )
+
+    builder.add_edge(
+        "retrieve_startup_knowledge",
+        "generate_startup_recommendations"
+    )
+
+    builder.add_edge(
+        "generate_startup_recommendations",
+        END
+    )
+
+    builder.add_edge(
+        "reject_business_idea",
+        END
     )
 
     builder.add_conditional_edges(
