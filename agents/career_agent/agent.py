@@ -185,15 +185,7 @@ Experience: {state["experience"]}
 Missing Requirements:
 {state["missing_requirements"]}
 
-Generate a helpful answer with:
-1. Eligibility result
-2. Missing requirements
-3. Skill gap analysis
-4. What to improve
-5. Study materials
-6. Interview questions for practice
-7. 7 day improvement plan
-8. Final advice
+Generate a non eligibility message that the candidate is not eligible for the company.
 
 Keep the answer motivating and practical.
 """
@@ -228,7 +220,7 @@ def build_career_agent():
     )
 
     graph.add_edge("generate_eligible_response", END)
-    graph.add_edge("generate_not_eligible_response", END)
+    graph.add_edge("generate_not_eligible_response",END)
 
     return graph.compile()
 
@@ -236,9 +228,9 @@ if __name__ == "__main__":
     career_agent = build_career_agent()
 
     user_query = """
-    I want to apply for TCS Ninja role.
-    My CGPA is 7.8.
-    I know Python, SQL, Machine Learning, FastAPI and basic DSA.
+    I want to apply for Microsoft Data analyst.
+    My CGPA is 7.5.
+    I know Python, SQL, Machine Learning, FastAPI and basic DSA Excel, Power BI, Statistics, and Data Visualization.
     Tell me whether I am eligible and how should I prepare.
     """
 

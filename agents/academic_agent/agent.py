@@ -75,6 +75,7 @@ agent = create_agent(
     tools=tools,
     model=llm,
 )
+if __name__=="__main__":
 
-response = agent.invoke({"messages": [{"role":"user","content":"Explain python programming"}]})
-print(response["messages"][-1].content[0]["text"])
+    response = agent.invoke({"messages": [{"role":"user","content":"Explain python programming"}]})
+    print(response["messages"][-1].content[0]["text"])

@@ -89,10 +89,10 @@ agent = create_agent(
     tools=tools,
     system_prompt="You are a supportive wellness assistant. Use the tools to help the user.",
 )
+if __name__=="__main__":
+    response = agent.invoke(
+        {"messages": [{"role": "user", "content": "I am stressed because of my project"}]}
+    )
 
-response = agent.invoke(
-    {"messages": [{"role": "user", "content": "I am stressed because of my project"}]}
-)
-
-msg = response["messages"][-1].content
-print(msg if isinstance(msg, str) else msg[0]["text"])
+    msg = response["messages"][-1].content
+    print(msg if isinstance(msg, str) else msg[0]["text"])
