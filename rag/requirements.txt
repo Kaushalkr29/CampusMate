@@ -7,4 +7,5 @@ pypdf
 langchain-huggingface
 docx2txt
 sentence-transformers
+ddgs
 langchain-openai

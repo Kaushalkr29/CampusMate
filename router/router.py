@@ -5,6 +5,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from agents.wellness_agent.agent import agent as wellness_agent
 from agents.academic_agent.agent import agent as academic_agent
 from agents.career_agent.agent import build_career_agent
+from agents.startup_agent.agent import build_graph
 
 load_dotenv()
 api = os.getenv("GEMINI_API_KEY")
@@ -14,7 +15,7 @@ llm = ChatGoogleGenerativeAI(
     temperature=0,
     api_key=api,
 )
-
+startup_agent=build_graph()
 career_agent = build_career_agent()
 
 def classify_intent(query: str) -> str:
@@ -25,20 +26,35 @@ def classify_intent(query: str) -> str:
     - wellness  : stress, mental health, sleep, counselling, wellbeing, activities
     - career    : placement, job eligibility, company, role, interview preparation
     - academic  : study topics, syllabus, previous year questions, quiz, study plan
-
+    - startup   : business ideas, entrepreneurship, funding, incubation, startup roadmap, business model, market research, MCA, MSME
     User Query:
     {query}
 
-    Return only one word: wellness, career, or academic.
+    Return only one word: wellness, career, startup or academic.
     """
     label = llm.invoke(prompt).content[0]["text"]
     if "wellness" in label:
         return "wellness"
     if "career" in label:
         return "career"
-    if "academic" in label:
-        return "academic"
+    if "startup" in label:
+        return "startup"
     return "academic"
+
+def run_startup(query: str) -> str:
+
+    result = startup_agent.invoke(
+        {
+        "user_query": query,
+        "category": "",
+        "priority": "",
+        "search_results": "",
+        "feasibility": "",
+        "recommendation": ""
+        }
+        )
+
+    return result["recommendation"]
 
 def run_wellness(query: str) -> str:
     response = wellness_agent.invoke(
@@ -80,5 +96,5 @@ def route_query(query: str) -> str:
     return run_academic(query)
 
 if __name__ == "__main__":
-    query = "I am stressed because of my project"
+    query = "I have business idea about Food stall"
     print(route_query(query))
